@@ -3,10 +3,12 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
+# Xcodeのビルドファイル
 build/
 DerivedData/
 
 ## Various settings
+# Xcodeのプライベート設定（ウィンドウサイズ、ブックマーク、ブレイクポイントなど）
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -15,10 +17,13 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+#ビルドのカスタムscheme（ロケーション等）
 xcuserdata/
 
 ## Other
+# 手動で廃止（deprecate）したクラスのファイルがここへ移動する（同じ名前のクラスを定義しようとしたときなど）
 *.moved-aside
+# VCSのメタデータが含まれ、コミットしてしまうとmergeが困難になるなどの問題が発生する
 *.xccheckout
 *.xcscmblueprint
 
@@ -65,3 +70,7 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+
+# Mac
+# Macが勝手に作る
+.DS_Store
